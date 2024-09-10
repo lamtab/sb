@@ -8,7 +8,7 @@ dropdb:
 	docker exec -it postgres dropdb sb
 
 migrateup:
-	migrate -path db/migration -database "postgresql://postgres:root@localhost:5432/sb?sslmode=disable" -verbose up  
+	migrate -path db/migration -database "postgresql://postgres:root@localhost:5431/sb?sslmode=disable" -verbose up  
 
 migratedown:
 	migrate -path db/migration -database "postgresql://postgres:root@localhost:5431/sb?sslmode=disable" -verbose down
